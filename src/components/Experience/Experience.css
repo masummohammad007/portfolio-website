@@ -1,0 +1,88 @@
+.expeience__container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.expeience__container > div
+{
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.expeience__container > div:hover
+{
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: default;
+}
+.expeience__container > div h3
+{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+.expeaince__content
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+.expeaince__details
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.expeaince__details__icon
+{
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+
+/* ******************** MEDIA QUERIES (MEDIUM DEVICES) ************** */
+
+@media screen and (max-width: 1024px) {
+   .expeience__container{
+       grid-template-columns: 1fr;
+   }
+   .expeience__container > div{
+       width: 80%;
+       padding: 2rem;
+       margin: 0 auto;
+   }
+   .expeaince__content{
+       padding: 1rem;
+   }
+}
+
+/* ******************** MEDIA QUERIES (SMALL DEVICES) ************** */
+
+@media screen and (max-width: 600px) {
+    .expeience__container{
+        gap: 1rem;
+    }
+    .expeience__container > div{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
